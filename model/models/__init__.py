@@ -16,5 +16,6 @@ def build_model(name: str, n_features: int, window: int = 96, n_classes: int = 2
         from models.tsmixer import TSMixer
         return TSMixer(n_features, window, n_classes, **hp)
     if name == "transformer":
-        raise NotImplementedError("transformer: add models/transformer.py (vanilla encoder)")
+        from models.transformer import Transformer
+        return Transformer(n_features, window, n_classes, **hp)
     raise ValueError(f"unknown model '{name}' (registry: {REGISTRY})")
