@@ -1,0 +1,22 @@
+# Data (large, regenerable via the pipeline)
+data/
+results/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Artifacts
+*.parquet
+*.zip
+*.gz
+*.CHECKSUM
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
